@@ -24,16 +24,8 @@ header{
     margin: 1em;
 }
 
-nav ul li{
-    list-style: none;
-}
-nav a{
-    text-decoration: none;
-    color: #D7D9D7;
-    
-}
 footer{
-    background: #FA5700;
+    background: #D7D9D7;
     text-align: center;
 }
 @media (min-width: 768px){
