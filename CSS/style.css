@@ -19,22 +19,17 @@ header{
     flex-direction: column;
 }
 .logo{
-    height: 15vh;
+    height: 5em;
     width: 15em;
     margin: 1em;
 }
 
 nav ul li{
     list-style: none;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
 }
 nav a{
     text-decoration: none;
-    color: #040F0F;
-    display: flex;
-    justify-content: center;
+    color: #D7D9D7;
     
 }
 footer{
