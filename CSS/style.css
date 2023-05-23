@@ -12,17 +12,20 @@
 }
 body{
     font-family: "Roboto-Regular";
-    background: red;
+    background: #D7D9D7;
+}
+.logo{
+    height: 15vh;
+    margin: 1em;
 }
 
+footer{
+    background: #FA5700;
+}
 @media (min-width: 768px){
-    body{
-        background-color: blueviolet;
-    }
+    
 }
 
 @media (min-width: 1024px){
-    body{
-        background-color: chartreuse;
-    }
+    
 }
