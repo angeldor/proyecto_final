@@ -1,6 +1,6 @@
 @font-face {
     font-family: Roboto-Regular;
-    src: url(../fonts/Roboto-Regular.ttf);
+    src: url(../assets/fonts/Roboto-Regular.ttf);
 }
 
 *{
@@ -8,145 +8,15 @@
     padding: 0;
     box-sizing: border-box;
     outline: 0;
+    
 }
 body{
     font-family: "Roboto-Regular";
-    background: #FFFCF2;
+    background: red;
 }
 
-#grid{
-    
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns:40% auto 30% 15%;
-    grid-template-rows: 7.5em 1fr 1fr 3.125em;
-    /* MAPEO EL GRID */
-    grid-template-areas: 
-    "header     header      nav       nav"
-    "productos  productos   productos adds"
-    "productos  productos   productos adds"
-    "footer     footer      footer    footer";;
-}
-
-/* DEFINO LAS AREAS DEL GRID */
-header{
-    grid-area: header;
-}
-
-nav{
-    grid-area: nav;
-}
-
-#productos{
-    grid-area: productos;
-}
-aside{
-    grid-area: adds;
-}
-footer{
-    grid-area: footer;
-}
-        /* DEFINO LOS ESTILOS */
-            /* ESTILOS NAVBAR */
-#menu{
-    grid-area: nav;
-    text-align: center;
-    display: flex;
-    align-items: end;
-    font-size: 1em;
-    background: #CFD2CD;
-}
-#menu ul{
-    list-style-type: none;
-}
-#menu ul li{
-    width: 9em;
-}
-#menu ul li a{
-    display: block;
-    text-decoration: none;
-    color: #fff;
-    background-color: #FA5800;
-    border: solid 1px #fff;
-    padding: 8px;
-    position: relative;
-}
-#menu ul li ul li a{
-    width: 10em;
-    padding: 8px 0px;
-    border-top-color: transparent;
-}
-#menu ul li ul{
-    display: none;
-}
-#menu ul li ul li ul li a.primera{
-    border-top-color: #fff;
-}
-#menu ul li.nivel1{
-    float: left;
-    margin-right: 1px;
-}
-#menu ul li a.nivel2{
-    color: #000;
-}
-#menu ul li a.nivel1, #menu ul li a.nivel2{
-    display: block;
-    position: relative;
-}
-#menu ul li:hover{
-    position: relative;
-}
-#menu ul li a:hover, #menu ul li:hover a.nivel1 {
-	background-color: #252422;
-	color: #fff;
-	position: relative;
-}
-#menu ul li:hover  ul.nivel2, #menu ul li a:hover  ul.nivel2{
-	display: block;
-	position: absolute;left: 0px;
-}
-#menu ul li ul li a:hover ul.nivel3, #menu ul li ul li:hover ul.nivel3 {
-	display: block;
-	position: absolute;
-	left: 10.0625em;
-	top:0px;
-}
-#menu ul li ul li a:hover {
-	border-top-color: #000;
-	position: relative;
-}
-            /* ESTILOS HEADER */
-header{
-    display: flex;
-    align-items: center;
-    background: #CFD2CD;
-}
-
-header img{
-    height: 12vh;
-    margin-left: 3vw;
-}
-
-            /* ESTILOS MAIN */
-
-
-
-            /* ESTILOS FOOTER */
-
-footer{
-    background: #FA5800;
-}
-
-.LinkDePrueba{
-    background-color: powderblue;
-    transition: background-color .5s;
-}
-
-.LinkDePrueba:hover{
-    background-color: gold;
-}
-
-img{
-    height: 100px;
+@media (max-width: 426px){
+    body{
+        background-color: blueviolet;
+    }
 }
