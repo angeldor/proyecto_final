@@ -14,19 +14,25 @@ body{
     font-family: "Roboto-Regular";
     background: #D7D9D7;
 }
-header{
-    display: flex;
-    flex-direction: column;
+ h3{
+    background-color: #040F0F;
+ }
+nav{
+    background: #A3A7A5;
 }
-.logo{
-    height: 5em;
-    width: 15em;
-    margin: 1em;
+article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.card{
+    margin: 2em;
+    padding: 2em;
 }
 
 footer{
-    background: #D7D9D7;
-    text-align: center;
+    background: #A3A7A5;
 }
 @media (min-width: 768px){
     
